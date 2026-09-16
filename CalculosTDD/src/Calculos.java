@@ -10,16 +10,8 @@ public class Calculos {
      * @return sumatoria
      */
     int sumarSerie(int x, int y) {
-       if(x>y) {
-           int temp=x;
-           x=y;
-           y=temp;
-     }
-     int suma=0;
-     for (int i=x; i<=y;i++)
-          suma=suma+i;
-     return suma;
-     }
+        throw new UnsupportedOperationException("En construcción.");
+    }
 
     /**
      * *
@@ -29,7 +21,8 @@ public class Calculos {
      * @return valor absoluto
      */
     float absoluto(float num) {
-        throw new UnsupportedOperationException("En construcción.");
+        float res=Math.abs(num);
+        return res;
     }
 
     /**
