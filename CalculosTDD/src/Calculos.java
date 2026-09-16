@@ -40,7 +40,19 @@ public class Calculos {
      * @return cantidad de vocales
      */
     int vocales(String texto) {
-        throw new UnsupportedOperationException("En construcción.");
+        public static int contarVocales(String texto) {
+    int contador = 0;
+    texto = texto.toLowerCase();
+    
+    for (int i = 0; i < texto.length(); i++) {
+        char c = texto.charAt(i);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            contador++;
+        }
+    }
+    
+    return contador;
+}
     }
 
     /**
